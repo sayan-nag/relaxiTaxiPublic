@@ -1,0 +1,55 @@
+ext {
+
+    versions = [
+            junit         : '4.13.2',
+            jmockit       : '1.41',
+            mockitoCore   : '2.8.9',
+            slf4j         : '1.7.25',
+            jacksonVersion: '2.13.0',
+            log4j2        : '2.17.1',
+            springboot    : '2.7.7',
+            springVersion : '5.3.25',
+            springData    : '2.7.7',
+            springDoc     : '1.6.14',
+            tomcat        : '9.0.44',
+            quartz        : '2.3.2',
+            hibernate     : '5.6.14.Final',
+            javaxServlet  : '4.0.1',
+            mysql         : '8.0.32',
+            mail          : '1.4.1',
+            guava         : '11.0.2',
+            memcached     : '2.8.4',
+            springsecurity: "2.7.7"
+
+    ]
+    libs = [
+            junit                  : "junit:junit:$versions.junit",
+            jmockit                : "org.jmockit:jmockit:$versions.jmockit",
+            mockitoCore            : "org.mockito:mockito-core:$versions.mockitoCore",
+            slf4j                  : "org.slf4j:slf4j-api:$versions.slf4j",
+            log4j2Api              : "org.apache.logging.log4j:log4j-api:$versions.log4j2",
+            log4j2Core             : "org.apache.logging.log4j:log4j-core:$versions.log4j2",
+            springbootCore         : "org.springframework.boot:spring-boot:$versions.springboot",
+            springbootActuator     : "org.springframework.boot:spring-boot-actuator:$versions.springboot",
+            springbootAutoConfigure: "org.springframework.boot:spring-boot-autoconfigure:$versions.springboot",
+            springbootValidation   : "org.springframework.boot:spring-boot-starter-validation:$versions.springboot",
+            springbootDependencies : "org.springframework.boot:spring-boot-dependencies:$versions.springboot",
+            springContext          : "org.springframework:spring-context:$versions.springVersion",
+            springContextSupport   : "org.springframework:spring-context-support:$versions.springVersion",
+            springTest             : "org.springframework:spring-test:$versions.springVersion",
+            springWeb              : "org.springframework:spring-web:$versions.springVersion",
+            springDataJPA          : "org.springframework.data:spring-data-jpa:$versions.springData",
+            springdocOpenapiUi     : "org.springdoc:springdoc-openapi-ui:$versions.springDoc",
+            tomcatEmbedCore        : "org.springframework.boot:spring-boot-starter-tomcat:$versions.springboot",
+            quartz                 : "org.quartz-scheduler:quartz:$versions.quartz",
+            javaxServletApi        : "javax.servlet:javax.servlet-api:$versions.javaxServlet",
+            mysqlConnector         : "mysql:mysql-connector-java:$versions.mysql",
+            hibernateCore          : "org.hibernate:hibernate-core:$versions.hibernate",
+            javaxMail              : "javax.mail:mail:$versions.mail",
+            springbootweb          : "org.springframework.boot:spring-boot-starter-web:$versions.springboot",
+            springDatajpa          : "org.springframework.boot:spring-boot-starter-data-jpa:$versions.springboot",
+            guava                  : "com.google.guava:guava:$versions.guava",
+            memcached              : "com.google.code.simple-spring-memcached:spymemcached:$versions.memcached"
+            // springsecurity : "org.springframework.boot:spring-boot-starter-security:$versions.springsecurity"
+    ]
+}

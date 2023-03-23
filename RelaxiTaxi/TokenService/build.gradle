@@ -1,0 +1,19 @@
+dependencies {
+    implementation libs.junit
+    implementation libs.springbootweb
+    implementation libs.junit
+    implementation libs.springDatajpa
+    implementation libs.springdocOpenapiUi
+    implementation libs.tomcatEmbedCore
+    implementation libs.springbootweb
+    implementation libs.hibernateCore
+    implementation libs.javaxServletApi
+    implementation libs.mysqlConnector
+    implementation libs.javaxMail
+    implementation libs.memcached
+
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+     implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+
+
+}

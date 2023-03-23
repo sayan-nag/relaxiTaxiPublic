@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestToken" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-18T04:23:13" hostname="DELL" time="1.331">
+  <properties/>
+  <testcase name="testToken" classname="TestToken" time="1.331"/>
+  <system-out><![CDATA[09:53:14.858 [Test worker] INFO com.relaxiTaxi.token.security.JWTTokenUtils - expiration date: 2023-03-20T11:53:13.000+0530
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,13 @@
+rootProject.name = 'RelaxiTaxi'
+include ':OnboardingService'
+include ':SessionService'
+include ':TokenService'
+include ':NotificationService'
+include ':Pipelines'
+
+project(":OnboardingService").projectDir = file("OnboardingService")
+project(":SessionService").projectDir = file("SessionService")
+project(":TokenService").projectDir = file("TokenService")
+project(":NotificationService").projectDir = file("NotificationService")
+project(":Pipelines").projectDir = file("Pipelines")
+

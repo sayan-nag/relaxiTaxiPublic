@@ -1,0 +1,26 @@
+dependencies {
+    implementation libs.junit
+    implementation libs.springbootweb
+    implementation libs.junit
+    implementation libs.springDatajpa
+    implementation libs.springdocOpenapiUi
+    implementation libs.tomcatEmbedCore
+    implementation libs.springbootweb
+    implementation libs.hibernateCore
+    implementation libs.javaxServletApi
+    implementation libs.mysqlConnector
+    implementation libs.javaxMail
+    implementation libs.guava
+
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
+    // https://mvnrepository.com/artifact/org.mockito/mockito-all
+    testImplementation group: 'org.mockito', name: 'mockito-all', version: '1.8.4'
+    testImplementation("com.github.tomakehurst:wiremock-standalone:2.27.2")
+    testImplementation("com.github.tomakehurst:wiremock-jre8:2.27.2")
+
+//    implementation libs.springsecurity
+//    implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+
+}
+
+//ext.moduleName = 'agent'

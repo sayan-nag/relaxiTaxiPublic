@@ -1,0 +1,54 @@
+import java.time.temporal.ChronoUnit
+
+allprojects {
+    apply from: "$rootDir/dependencies.gradle"
+    apply plugin: 'project-report'
+    apply plugin: 'java-library'
+    apply plugin: 'maven-publish'
+    apply from: "$rootDir/build.properties"
+
+
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+
+    publishing {
+        repositories {
+            mavenLocal()
+        }
+    }
+    group = projectName
+    version = projectVersion + "." + localBuildNumber
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    ext {
+        buildDate = Instant.now().truncatedTo(ChronoUnit.SECONDS).toString();
+    }
+    if (ext.find("buildBranchName") == null)
+        ext.set("buildBranchName", "")
+    if (ext.find("buildCLNumber") == null)
+        ext.set("buildCLNumber", 0)
+
+
+}
+
+subprojects {
+    apply plugin: 'jacoco'
+    jacoco {
+        toolVersion = "0.8.3"
+        reportsDir = file("$buildDir/reports/jacoco")
+    }
+
+    jacocoTestReport {
+
+        reports {
+            xml.enabled false
+            csv.enabled false
+            html.enabled = true
+        }
+        dependsOn test
+    }
+}
+
